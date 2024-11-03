@@ -1,0 +1,5 @@
+zarplata = int(input("Введите зарплату за месяц: "))
+kredit = int(input("Введите платеж по кредииту: "))
+komunalka = int(input("Введите задолдженость за комунальные услуги: "))
+result = (zarplata - kredit - komunalka)
+print(result)
