@@ -1,0 +1,7 @@
+number1 = int(input("Введите число номер 1: "))
+number2 = int(input("Введите число номер 2: "))
+number3 = int(input("Введите чилсо номер 3: "))
+result_summ = (number1 + number2 + number3)
+result_proiz = (number1 * number2 * number3)
+print(result_summ)
+print(result_proiz)
