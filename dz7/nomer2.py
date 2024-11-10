@@ -9,7 +9,7 @@ print(user_list[::-1])
 #Кратные семи
 print(*[i for i in user_list if i % 7 == 0])
 
-#Кратсные пяти
+#Количество кратных пяти
 print(len([i for i in user_list if i % 5 == 0]))
 
 
