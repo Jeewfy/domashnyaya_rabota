@@ -1,17 +1,24 @@
 summa = 0
-number = int(input("Введите число: "))
-maximum = number
-minimum = number
+maximum = None
+minimum = None
 
-while number != 7:
-    number = int(input("Введите число: "))
-    summa += number
+while True:
+    number = float(input("Введите число (введите 7 для выхода): "))
+
     if number == 7:
-        print("Пока!")
+        print("Good bye!")
         break
-    elif number < minimum:
-        minimum = number
-    elif number > maximum:
+
+    summa += number
+
+    if maximum is None or number > maximum:
         maximum = number
-      
-    print(f"Сумма: {summa}", f"Макс: {maximum}", f"Мин: {minimum}")
+
+    if minimum is None or number < minimum:
+        minimum = number
+
+    print("Сумма введенных чисел:", summa)
+    if maximum is not None:
+        print("Максимальное введенное число:", maximum)
+    if minimum is not None:
+        print("Минимальное введенное число:", minimum)
